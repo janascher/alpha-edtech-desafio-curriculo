@@ -1,7 +1,7 @@
 /* ### Configuração geral da página ### */
 * {
     box-sizing: border-box;
-    color: hsl(180, 3%, 19%);
+    /*color: hsl(180, 3%, 19%);*/
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ body {
 
 /* # Left Column # */
 #container .leftSide {
-    background: hsla(256, 20%, 50%, 1);
+    background: hsla(270, 2%, 50%, 1);
     position: relative;
     padding: 40px;
 }
@@ -43,7 +43,7 @@ body {
 .profile {
     display: flex;
     align-items: center;
-    border-bottom: 5px dotted hsl(0, 0%, 75%);
+    border-bottom: 5px dotted hsl(180, 3%, 19%);
     flex-direction: column;
     padding-bottom: 20px;
     position: relative;
@@ -51,6 +51,7 @@ body {
 
 .profile .imageProfile {
     border-radius: 50%;
+    box-shadow: -10px 0px 13px -7px #2f3232, 10px 0px 13px -7px #2f3232, 5px 5px 15px 5px rgb(0 0 0 / 40%);
     overflow: hidden;
     position: relative;
     height: 200px;
@@ -113,7 +114,7 @@ span {
 }
 
 .contact ul li .icon i {
-    color: hsl(166, 48%, 75%);
+    color: hsl(180, 3%, 19%);
 }
 
 .contact ul li span {
@@ -142,7 +143,7 @@ span {
 }
 
 .education h5 {
-    color: hsl(166, 48%, 75%);
+    color: hsl(180, 3%, 19%);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -169,7 +170,7 @@ span {
 }
 
 .languages h5 {
-    color: hsl(166, 48%, 75%);
+    color: hsl(180, 3%, 19%);
     font-size: 1rem;
     font-weight: 500;
 }
@@ -227,7 +228,7 @@ span {
 }
 
 .about .box .office h5 {
-    color: hsl(166, 48%, 48%);
+    color: hsla(264, 39%, 51%, 1);
     letter-spacing: 1px;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -240,7 +241,7 @@ span {
 }
 
 .box ul li {
-    border-right: 2px solid hsl(166, 48%, 48%);
+    border-right: 4px dotted hsla(264, 39%, 51%, 1);
     list-style: none;
     padding-right: 5px;
     margin: 10px 0;  
