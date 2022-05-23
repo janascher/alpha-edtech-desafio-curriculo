@@ -1,0 +1,251 @@
+/* ### Configuração geral da página ### */
+* {
+    box-sizing: border-box;
+    color: hsl(180, 3%, 19%);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ### CORPO ### */
+body {
+    display: flex;
+    align-items: center;
+    background: hsla(265, 100%, 86%, 1);
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#container {
+    background: hsla(0, 0%, 19%, 1);
+    position: relative;
+    margin: 50px;
+    max-width: 1000px;
+    min-height: 1000px;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    box-shadow: 0 35px 55px hsla(0, 0%, 0%, 0.1);
+    /* Usado 1fr para definir as duas colunas */
+    grid-template-columns: 1fr 2fr;
+}
+
+/* # Left Column # */
+#container .leftSide {
+    background: hsla(256, 20%, 50%, 1);
+    position: relative;
+    padding: 40px;
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    border-bottom: 5px dotted hsl(0, 0%, 75%);
+    flex-direction: column;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.profile .imageProfile {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.profile .imageProfile img {
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.profile, 
+h2,
+span {
+    color: hsl(0,0%,93%);
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.profile span {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+/* Contact */
+.contact {
+    padding: 20px;
+}
+
+.title {
+    color: hsl(0,0%,93%);
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+
+.contact ul {
+    position: relative;
+}
+
+.contact ul li {
+    list-style: none;
+    margin: 10px 0;
+    position: relative;
+}
+
+.contact ul li .icon {
+    display: inline-block;
+    font-size: 16px;
+    width: 30px;
+}
+
+.contact ul li .icon i {
+    color: hsl(166, 48%, 75%);
+}
+
+.contact ul li span {
+    color: hsl(0,0%,93%);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0px;
+    line-height: 0rem;
+    margin: 0;
+    text-transform: none;   
+}
+
+.contact ul li span a {
+    color: hsl(0,0%,93%);
+    text-decoration: none;
+}
+
+.contact ul li span a:hover {
+    color: hsl(180, 3%, 19%);
+}
+
+/* Education */
+.education li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.education h5 {
+    color: hsl(166, 48%, 75%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.education p:nth-child(2) {
+    color: hsl(0,0%,93%);
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.education p {
+    color: hsl(0,0%,93%);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 3px 0px;
+}
+
+/* Languages */
+.languages li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.languages h5 {
+    color: hsl(166, 48%, 75%);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.languages p {
+    color: hsl(0,0%,93%);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* # Right Column # */
+#container .rightSide {
+    background: hsla(0,0%,93%,1);
+    position: relative;
+    padding: 40px;
+}
+
+/* About */
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.titleTwo {
+    color: hsl(180, 3%, 19%);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text {
+    color: hsl(180, 3%, 19%);
+    text-align: justify;
+}
+
+/* Experience */
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year {
+    min-width: 150px;
+}
+
+.about .box .year h5 {
+    color: hsl(211, 12%, 48%);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.about .box .office h5 {
+    color: hsl(166, 48%, 48%);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Technologies */
+#flex-container  {
+    display: flex;
+    gap: 8px;
+}
+
+.box ul li {
+    border-right: 2px solid hsl(166, 48%, 48%);
+    list-style: none;
+    padding-right: 5px;
+    margin: 10px 0;  
+}
+
+.box ul li:last-child {
+    border: none;
+}
