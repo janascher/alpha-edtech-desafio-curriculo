@@ -17,7 +17,7 @@
 ## 👀 Preview
 
 <div align="center">
-	<a href="">
+	<a href="https://janascher.github.io/alpha-edtech-desafio-curriculo/">
 		<img src="https://user-images.githubusercontent.com/79182711/169724217-427d727b-4875-45a7-ae68-0c3a12d06cc1.png" alt="Élegante Website" title="Élegante Website" width="350" />
 	</a>
 </div>
